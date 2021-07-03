@@ -1,0 +1,6 @@
+{
+    "mysql_database": "weather_report",
+    "mysql_user": "comatch",
+    "mysql_pass": "comatch",
+    "host": "mysql_db"
+  }
