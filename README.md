@@ -11,10 +11,10 @@ This is how it works:
     ```
 
   * For daily load  run `docker-compose exec python_app python load_data.py <load_type> <City Name>`.
-  Load Types:
+  *  Load Types:
     - Daily
     - History
-  City Name :
+  * City Name :
     - Tegel
 
 The job will run in two modes dependending upon the paramete given (Daily, History). Each job gets station id 
@@ -26,7 +26,7 @@ additional columns and all records are inserted to Mysql DB.
 History Run - The Job fetch data for all available years for the station provided and loads data into mysql db. 
 
 ## Database Schema
- Table Name : Weather Report
+ * Table Name : Weather Report
 +--------------+---------------+------+-----+-------------------+-------+
 | Field        | Type          | Null | Key | Default           | Extra |
 +--------------+---------------+------+-----+-------------------+-------+
@@ -47,25 +47,8 @@ History Run - The Job fetch data for all available years for the station provide
 +--------------+---------------+------+-----+-------------------+-------+
 
 
-There are other directories inside `src/` that can be interesting to you:
-
-* `init-fixtures`: contains the scripts that are necessary to initialize the
+* `init.sql`: contains the scripts that are necessary to initialize the
   database. Every time you check a solution script, the whole database gets
   dropped and regenerated using these fixtures.
 
-* `solution`: contains your solution files.
-
-* `output-obtained`: contains the latest execution results of your solutions in
-  CSV format.
-
-* `output-expected`: contains the expected results from each query in CSV
-  format.
-
-**Note:** To know the exact name you have to use for your solutions, you can
-check the filenames in the `output-expected` folder. The files there should
-match the files in the `solution` folder.
-
-## Instructions to submit the solution
-
-Please submit a modified compressed file including an SQL file for each of the 
-tasks in `src/solution/`
+* Sql_queries.txt: Contains solution sql queries
