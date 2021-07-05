@@ -27,7 +27,7 @@ History Run - The Job fetch data for all available years for the station provide
 
 ## Database Schema
  * Table Name : Weather Report
- ! Database schema (Schema.png)
+ ![Database Schema] (Schema.png)
 
 * `init.sql`: contains the scripts that are necessary to initialize the
   database. Every time you check a solution script, the whole database gets
