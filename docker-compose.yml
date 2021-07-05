@@ -1,7 +1,12 @@
 version: '3'
 
 # Run as
-# docker-compose build; docker-compose up -d
+#start mysql and python app containers
+#docker-compose up 
+
+#Rebuild python_app image 
+#docker-compose up --build -d python_app
+
 # Check with
 # docker ps
 # Then check the logs with
@@ -19,6 +24,12 @@ services:
             MYSQL_PASSWORD: comatch
         networks:
             - app-tier
+        command: --init-file /usr/src/app/init.sql
+        volumes:
+            - ./init.sql:/usr/src/app/init.sql
+        ports:
+            - 5555:3306
+            - 5551:33060
     python_app:
         build:
             context: .

@@ -1,0 +1,10 @@
+#Average air temperature for the month of February for the "Berlin / Tegel" 10382
+
+SELECT 
+    AVG(tavg) AS AVERAGE_TEMPERATURE, YEAR(time) AS YEAR
+FROM
+    weather_report.weather_data
+WHERE
+    station_id = 10382 AND MONTH(time) = 2
+        AND tavg IS NOT NULL
+GROUP BY YEAR(time);

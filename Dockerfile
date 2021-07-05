@@ -10,6 +10,9 @@ RUN pip3 install mysqlclient \
     meteostat
 
 COPY config.json /usr/src/app/
+COPY init.sql /usr/src/app/
+
+
 COPY  .  .
 
 EXPOSE 4000
