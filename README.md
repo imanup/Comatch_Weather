@@ -11,7 +11,7 @@ This is how it works:
     ```
 
   * For daily load  run `docker-compose exec python_app python load_data.py <load_type> <City Name>`.
-  *  Load Types:
+  *  Load Types :
     - Daily
     - History
   * City Name :
@@ -27,7 +27,7 @@ History Run - The Job fetch data for all available years for the station provide
 
 ## Database Schema
  * Table Name : Weather Report
- ![Database Schema] (Schema.png)
+ ![Database Schema](Schema.png)
 
 * `init.sql`: contains the scripts that are necessary to initialize the
   database. Every time you check a solution script, the whole database gets
