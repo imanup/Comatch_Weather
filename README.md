@@ -27,25 +27,7 @@ History Run - The Job fetch data for all available years for the station provide
 
 ## Database Schema
  * Table Name : Weather Report
-+--------------+---------------+------+-----+-------------------+-------+
-| Field        | Type          | Null | Key | Default           | Extra |
-+--------------+---------------+------+-----+-------------------+-------+
-| station_id   | int(11)       | YES  |     | NULL              |       |
-| station_name | varchar(20)   | YES  |     | NULL              |       |
-| time         | date          | YES  |     | NULL              |       |
-| tavg         | decimal(10,2) | YES  |     | NULL              |       |
-| tmin         | decimal(10,2) | YES  |     | NULL              |       |
-| tmax         | decimal(10,2) | YES  |     | NULL              |       |
-| prcp         | decimal(10,2) | YES  |     | NULL              |       |
-| snow         | decimal(10,2) | YES  |     | NULL              |       |
-| wdir         | decimal(10,2) | YES  |     | NULL              |       |
-| wspd         | decimal(10,2) | YES  |     | NULL              |       |
-| wpgt         | decimal(10,2) | YES  |     | NULL              |       |
-| pres         | decimal(10,2) | YES  |     | NULL              |       |
-| tsun         | decimal(10,2) | YES  |     | NULL              |       |
-| load_dt      | timestamp     | NO   |     | CURRENT_TIMESTAMP |       |
-+--------------+---------------+------+-----+-------------------+-------+
-
+ ! Database schema (Schema.png)
 
 * `init.sql`: contains the scripts that are necessary to initialize the
   database. Every time you check a solution script, the whole database gets
